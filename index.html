@@ -13,14 +13,20 @@
   </style>
 </head>
 <body class="bg-blue-50 text-gray-800 scroll-smooth">
+
   <!-- Navbar -->
   <nav class="bg-white shadow fixed top-0 left-0 right-0 z-50">
     <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
       <a href="#" class="text-2xl font-bold text-blue-700">Cetaphil Baby</a>
-      <ul class="flex space-x-6 text-sm font-semibold text-gray-700">
-        <li><a href="#tentang" class="hover:text-blue-600 transition">Tentang</a></li>
-        <li><a href="#tips" class="hover:text-blue-600 transition">Tips</a></li>
-        <li><a href="#produk" class="hover:text-blue-600 transition">Produk</a></li>
+      <!-- Tombol Mobile -->
+      <div class="md:hidden">
+        <button id="menu-toggle" class="text-2xl focus:outline-none">☰</button>
+      </div>
+      <!-- Menu -->
+      <ul id="menu" class="hidden md:flex space-x-6 text-sm font-semibold text-gray-700 flex-col md:flex-row absolute md:static top-16 left-0 w-full md:w-auto bg-white md:bg-transparent p-6 md:p-0">
+        <li><a href="#tentang" class="hover:text-blue-600 transition block py-2">Tentang</a></li>
+        <li><a href="#tips" class="hover:text-blue-600 transition block py-2">Tips</a></li>
+        <li><a href="#produk" class="hover:text-blue-600 transition block py-2">Produk</a></li>
       </ul>
     </div>
   </nav>
@@ -29,73 +35,63 @@
   <section class="relative bg-cover bg-center h-screen" style="background-image: url('cetaphil_baby.jpg');">
     <div class="absolute inset-0 bg-gradient-to-b from-blue-900/70 to-blue-900/10"></div>
     <div class="relative z-10 flex flex-col justify-center items-center h-full text-white text-center px-6">
-      <h1 class="text-5xl md:text-6xl font-bold mb-4 drop-shadow-lg">Cetaphil Baby</h1>
-      <p class="text-lg md:text-2xl mb-6 max-w-2xl">Perawatan lembut untuk kulit bayi yang sehat dan terlindungi.</p>
+      <h1 class="text-4xl md:text-6xl font-bold mb-4 drop-shadow-lg">Cetaphil Baby</h1>
+      <p class="text-base md:text-2xl mb-6 max-w-2xl">Perawatan lembut untuk kulit bayi yang sehat dan terlindungi.</p>
       <a href="#tentang" class="bg-green-400 hover:bg-green-500 px-8 py-3 rounded-full font-semibold transition-all duration-300 shadow-lg">
         Mulai Jelajahi
       </a>
     </div>
   </section>
 
-  <!-- Section Tentang -->
-<section id="tentang" class="pt-32 pb-20 px-6 bg-blue-100 text-center mt-12">
+  <!-- Tentang -->
+  <section id="tentang" class="pt-32 pb-20 px-6 bg-blue-100 text-center mt-12">
     <div class="max-w-4xl mx-auto">
       <h2 class="text-3xl font-bold text-blue-700 mb-6">Tentang Cetaphil Baby</h2>
       <p class="text-lg text-gray-700 leading-relaxed">
-      Cetaphil Baby adalah rangkaian perawatan kulit yang dirancang khusus untuk kulit bayi yang lembut dan sensitif.
-      Diformulasikan dengan bahan-bahan alami seperti calendula organik, aloe vera, dan minyak alami,
-      Cetaphil Baby memberikan perlindungan menyeluruh sejak hari pertama kehidupan si kecil.
-      Dipercaya oleh para ibu di seluruh dunia, kami berkomitmen untuk menyediakan produk terbaik yang menjaga kulit bayi tetap sehat, lembap, dan nyaman.
+        Cetaphil Baby adalah rangkaian perawatan kulit yang dirancang khusus untuk kulit bayi yang lembut dan sensitif.
+        Diformulasikan dengan bahan alami seperti calendula organik, aloe vera, dan minyak alami, Cetaphil Baby menjaga kulit bayi tetap sehat, lembap, dan nyaman.
       </p>
     </div>
   </section>
 
   <!-- Tips Merawat Si Kecil -->
-  <section id="tips" class="pt-20 pb-16 px-6 shadow p-9 bg-white">
+  <section id="tips" class="pt-20 pb-16 px-6 shadow bg-white">
     <div class="max-w-6xl mx-auto">
       <h2 class="text-3xl font-bold text-blue-700 text-center mb-10">Tips Merawat Si Kecil</h2>
       <div class="grid md:grid-cols-3 gap-8">
         <div class="bg-blue-50 rounded-xl shadow p-6 flex items-start gap-4">
           <span class="text-blue-600 text-2xl">🛁</span>
-          <p><strong>Mandikan bayi</strong> dengan air hangat dan sabun lembut khusus bayi untuk menjaga kebersihan dan kelembapan kulitnya.</p>
+          <p><strong>Mandikan bayi</strong> dengan air hangat dan sabun lembut khusus bayi.</p>
         </div>
-
         <div class="bg-blue-50 rounded-xl shadow p-6 flex items-start gap-4">
           <span class="text-blue-600 text-2xl">🧴</span>
-          <p><strong>Gunakan lotion bayi</strong> setelah mandi untuk menjaga kelembapan dan mencegah kulit kering.</p>
+          <p><strong>Gunakan lotion</strong> setelah mandi untuk menjaga kelembapan.</p>
         </div>
-
         <div class="bg-blue-50 rounded-xl shadow p-6 flex items-start gap-4">
           <span class="text-blue-600 text-2xl">💆‍♀️</span>
-          <p><strong>Pijat bayi</strong> dengan minyak alami untuk menenangkan, mempererat bonding, dan membantu tidur lebih nyenyak.</p>
+          <p><strong>Pijat bayi</strong> dengan minyak alami untuk kenyamanan dan bonding.</p>
         </div>
-
         <div class="bg-blue-50 rounded-xl shadow p-6 flex items-start gap-4">
           <span class="text-blue-600 text-2xl">👚</span>
-          <p><strong>Gunakan pakaian lembut</strong> dari bahan katun agar kulit bayi tidak iritasi atau panas.</p>
+          <p><strong>Pakaian lembut</strong> dari bahan katun agar tidak iritasi.</p>
         </div>
-
         <div class="bg-blue-50 rounded-xl shadow p-6 flex items-start gap-4">
           <span class="text-blue-600 text-2xl">☀️</span>
-          <p><strong>Berikan waktu bermain</strong> di pagi hari dengan sinar matahari untuk mendukung kesehatan dan pertumbuhan bayi.</p>
+          <p><strong>Sinar matahari pagi</strong> bantu pertumbuhan dan kesehatan bayi.</p>
         </div>
-
         <div class="bg-blue-50 rounded-xl shadow p-6 flex items-start gap-4">
           <span class="text-blue-600 text-2xl">🧸</span>
-          <p><strong>Sediakan lingkungan aman</strong> dan hangat agar bayi nyaman dan bebas dari gangguan.</p>
+          <p><strong>Lingkungan aman</strong> penting untuk kenyamanan si kecil.</p>
         </div>
-
       </div>
     </div>
   </section>
 
-<!-- Produk Section -->
-<section id="produk" class="py-20 px-6 bg-white">
-  <div class="max-w-6xl mx-auto">
-    <h2 class="text-3xl font-bold text-center text-blue-700 mb-12">Produk Cetaphil Baby</h2>
-    
-    <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-8">
-
+  <!-- Produk -->
+  <section id="produk" class="py-20 px-6 bg-white">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-3xl font-bold text-center text-blue-700 mb-12">Produk Cetaphil Baby</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
       <!-- Produk 1 -->
       <div class="bg-blue-50 rounded-xl shadow hover:shadow-lg p-6 text-center transition">
         <img src="daily_lotion.png" alt="Cetaphil Baby Daily Lotion" class="w-28 mx-auto mb-4">
@@ -167,12 +163,10 @@
         <p class="font-bold text-green-600 mb-4">Rp100.000</p>
         <a href="https://wa.me/6281234567890?text=Halo,%20saya%20ingin%20beli%20Sunscreen%20Cetaphil%20Baby." target="_blank" class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-full text-sm">Beli Sekarang</a>
       </div>
-
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- Footer -->
+  <!-- Footer -->
   <footer class="bg-white border-t py-10 mt-12 text-gray-600">
     <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-8 text-sm">
       <div>
@@ -190,5 +184,14 @@
       </div>
     </div>
   </footer>
+
+  <!-- Script Toggle Menu -->
+  <script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const menu = document.getElementById('menu');
+    menuToggle.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+  </script>
 </body>
 </html>
